@@ -59,7 +59,7 @@
 }
 
 iframe {
-    min-height: 200px; /* or whatever */
-    max-height: 500px; /* or whatever */
-    max-width: 100px;
-}
+        min-width: 100%; 
+        width: 100px;
+        *width: 100%; 
+    }
