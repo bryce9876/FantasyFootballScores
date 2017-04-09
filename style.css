@@ -58,4 +58,7 @@
     display: block;
 }
 
-html, body { height: 100% }
+iframe {
+    min-height: 200px; /* or whatever */
+    max-height: 500px; /* or whatever */
+}
