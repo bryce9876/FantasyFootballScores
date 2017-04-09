@@ -1,6 +1,70 @@
-<html>
-<header><title>Hello World Title</title></header>
-<body>
-Hello world
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+
+
+    <!--
+    Redirect to fanfooty if not on mobile device
+	<script type="text/javascript">
+		if (screen.width >= 699)
+		{
+			document.location = "http://www.fanfooty.com.au/";
+		}
+	</script>
+	//-->
+
+    <title>Live SC Scores</title>
+     </head>
+
+
+  <body>
+
+  <div class="container">
+    <a href="#home">Live SC Scores</a>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="myFunction()">Change Round</button>
+      <div class="dropdown-content" id="myDropdown">
+        <a href="#">Round 1</a>
+        <a href="#">Round 2</a>
+        <a href="#">Round 3</a>
+        <a href="#">Round 4</a>
+      </div>
+    </div> 
+  </div>
+
+  <h3>Dropdown Menu inside a Navigation Bar</h3>
+  <p>Click on the "Dropdown" link to see the dropdown menu.</p>
+	
+  	<form action="http://google.com">
+      <input type="submit" value="Go to Google" />
+	</form>
+
+	<iframe src="http://live.fanfooty.com.au/game/matchcentre.html?id=6019"></iframe>
+
+    
+    <script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+
+
+  </body>
 </html>
