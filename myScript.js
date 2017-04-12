@@ -41,6 +41,5 @@ function changeGame(gameNumber) {
         
         break;
     case 9:
-        
         break;
 }
