@@ -15,9 +15,11 @@ window.onclick = function(e) {
 }
 
 function changeGame(gameNumber) {
+	
 	switch(gameNumber) {
     case 1:
-        document.getElementById("game1").src = 'http://www.fanfooty.com.au/game/preview.php?id=6028' 
+        document.getElementById('iframe').src = 'http://live.fanfooty.com.au/game/matchcentre.html?id=6000';
+        document.getElementById('iframe').contentWindow.location.reload();
         break;
     case 2:
         
@@ -40,6 +42,11 @@ function changeGame(gameNumber) {
     case 8:
         
         break;
-    case 9:
+    default:
         break;
+    }
+}
+
+function iframeDidLoad() {
+    alert('Done');
 }

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
     <!-- Latest compiled and minified CSS -->
@@ -64,7 +64,7 @@
     </div>
 
     <div class "text_container">    
-    <a id = "game1" onclick="changeGame(1) target="_blank" class="btn btn-lg btn-warning">
+    <a id = "game1" onclick="changeGame(1);" target="_blank" class="btn btn-lg btn-warning">
       WCE vs SYD
     </a>
     <span class="label label-default">Thurs 8:10</span><br />
@@ -110,7 +110,7 @@
     <span class="label label-default">Mon 3:20  </span><br />
     </div>
 
-    <iframe height="100%" id="iframe" scrolling="no" width="100%" id="iframe" src="http://live.fanfooty.com.au/game/matchcentre.html?id=6019" />
+    <iframe height="100%" id="iframe" scrolling="no" width="100%" id="iframe" onLoad="iframeDidLoad();" src="http://live.fanfooty.com.au/game/matchcentre.html?id=6019" />
 
 
   </body>
