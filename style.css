@@ -6,10 +6,10 @@
 .text_container {
     position: absolute;
     top = 150px;
-    height: 400px;
+    height: 410px;
     z-index: 5;
     background-color: #FFF8FF;
-    width:95%;
+    width:100%;
     z-index: 1;
 }
 
