@@ -18,7 +18,7 @@ function changeGame(gameNumber) {
 	
 	switch(gameNumber) {
     case 1:
-        document.getElementById('iframe').src = 'http://live.fanfooty.com.au/game/matchcentre.html?id=6000';
+        document.getElementById('iframe').src = "http://live.fanfooty.com.au/game/matchcentre.html?id=6020"
         document.getElementById('iframe').contentWindow.location.reload();
         break;
     case 2:
@@ -47,6 +47,3 @@ function changeGame(gameNumber) {
     }
 }
 
-function iframeDidLoad() {
-    alert('Done');
-}
