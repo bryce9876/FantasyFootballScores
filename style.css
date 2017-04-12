@@ -1,10 +1,6 @@
-.text_container {
+.btn-group {
     position: absolute;
     top = 150px;
-    left: 0; 
-    right: 0; 
-    margin-left: auto; 
-    margin-right: auto; 
     height: 300px;
     z-index: 5;
     background-color: #FFF8FF;
