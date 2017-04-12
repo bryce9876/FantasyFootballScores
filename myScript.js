@@ -1,3 +1,4 @@
+/*----DROPDOWN MENU----*/
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function changeRound() {
@@ -14,11 +15,15 @@ window.onclick = function(e) {
   }
 }
 
+/*----UPDATE IFRAME----*/
 function changeGame(gameNumber) {
+
+	var initialURL = "http://live.fanfooty.com.au/game/matchcentre.html?id=";
+	var game1ID = 6028;
 	
 	switch(gameNumber) {
     case 1:
-        document.getElementById('iframe').src = "http://live.fanfooty.com.au/game/matchcentre.html?id=6020";
+        document.getElementById('iframe').src = initialURL + game1ID;
         break;
     case 2:
         
