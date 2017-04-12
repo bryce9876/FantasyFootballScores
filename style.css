@@ -6,7 +6,7 @@
 .text_container {
     position: absolute;
     top = 150px;
-    height: 420px;
+    height: 470px;
     z-index: 5;
     background-color: #FFF8FF;
     width:100%;
