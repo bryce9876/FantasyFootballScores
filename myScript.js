@@ -15,40 +15,56 @@ window.onclick = function(e) {
   }
 }
 
+
 /*----UPDATE IFRAME----*/
 function changeGame(gameNumber) {
 
 	var initialURL = "http://live.fanfooty.com.au/game/matchcentre.html?id=";
-	var game1ID = 6022;
-	window.alert(initialURL + game1ID);
-	
-	switch(gameNumber) {
-    case 1:
-        document.getElementById('iframe').src = initialURL + game1ID;
-        break;
-    case 2:
-        
-        break;
-    case 3:
-        
-        break;
-    case 4:
-        
-        break;
-    case 5:
-        
-        break;
-    case 6:
-        
-        break;
-    case 7:
-        
-        break;
-    case 8:
-        
-        break;
-    default:
-        break;
-    }
+	var game1ID = 6028;
+	var gameXID = 6028 + gameNumber -1;
+
+    document.getElementById('iframe').src = initialURL + gameXID;
 }
 
+
+
+
+
+/*
+
+function withinTimeRange(startHour, startMin, day){
+	var length = 3;  // Approximate length of a match;
+	var currentdate = new Date(); 
+	var currentDay = currentdate.getDay();
+	var currentHour = currentdate.getHours();
+	var currentMin = currentdate.getMinutes();
+
+	if (currentDay != day) return false;
+	if (startHour == currentHour  &&  startMin <= currentMin){
+		return true;
+	}
+	if (startHour < currentHour  &&  currentHour < (startHour + 3)){
+		return true;
+	}
+	if (currentHour == (startHour + 3)  &&  startMin >= currentMin){
+		return true;
+	}
+	return false;
+}
+
+if ()
+  case (withinTimeRange(18, 10, 4)):
+    
+    break;
+  case (y < 60):
+    //
+    break;
+  case (y < 130):
+    //
+    break;
+}
+
+
+alert("day is " + (currentdate.getDay()) + " and hours is "
+	+ currentdate.getHours() + " and min is " + currentdate.getMinutes());
+*/
