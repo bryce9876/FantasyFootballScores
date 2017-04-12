@@ -59,7 +59,10 @@
 }
 
 iframe {
-        width: 1px;
-        min-width: 100%;
-        *width: 100%;
-    }
+    width: 1px;
+    min-width: 100%;
+    *width: 100%;
+    clip:rect(190px,1100px,800px,250px);
+            top:-160px; left:-160px;
+}
+
