@@ -19,7 +19,8 @@ window.onclick = function(e) {
 function changeGame(gameNumber) {
 
 	var initialURL = "http://live.fanfooty.com.au/game/matchcentre.html?id=";
-	var game1ID = 6028;
+	var game1ID = 6022;
+	window.alert(initialURL + game1ID);
 	
 	switch(gameNumber) {
     case 1:
