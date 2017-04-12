@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -38,7 +41,7 @@
     <div class="container">
       <a href="#home">Live SC Scores</a>
       <div class="dropdown">
-        <button class="dropbtn" onclick="myFunction()">Change Round</button>
+        <button class="dropbtn" onclick="changeRound()">Change Round</button>
         <div class="dropdown-content" id="myDropdown">
           <a href="#">Round 1</a>
           <a href="#">Round 2</a>
@@ -60,57 +63,52 @@
       </div> 
     </div>
 
-    
-    <a href="http://www.google.com" target="_blank" class="btn btn-lg btn-warning">
+    <div class "text_container">    
+    <a id = "game1" href="http://www.google.com" target="_blank" class="btn btn-lg btn-warning">
       WCE vs SYD
     </a>
     <span class="label label-default">Thurs 8:10</span><br />
 
-    <a href="http://www.yahoo.com" target="_blank" class="btn btn-lg btn-warning">
+    <a id = "game2" href="http://www.yahoo.com" target="_blank" class="btn btn-lg btn-warning">
       NMFC vs WB
     </a>
     <span class="label label-default">Fri 4:20 </span><br />
 
-    <a href="http://www.bing.com" target="_blank" class="btn btn-lg btn-warning">
+    <a id = "game3" href="http://www.bing.com" target="_blank" class="btn btn-lg btn-warning">
       MELB vs FREO
     </a>
     <span class="label label-default">Sat 1:45  </span><br />
 
-    <a href="http://www.google.com" target="_blank" class="btn btn-lg btn-warning">
+    <a id = "game4" href="http://www.google.com" target="_blank" class="btn btn-lg btn-warning">
       GWS vs PTA
     </a>
     <span class="label label-default">Sat 4:35  </span><br />
 
-    <a href="http://www.yahoo.com" target="_blank" class="btn btn-lg btn-warning">
+    <a id = "game5" href="http://www.yahoo.com" target="_blank" class="btn btn-lg btn-warning">
       CARL vs GCFC
     </a>
     <span class="label label-default">Sat 7:25  </span><br />
 
-    <a href="http://www.bing.com" target="_blank" class="btn btn-lg btn-warning">
+    <a id = "game6" href="http://www.bing.com" target="_blank" class="btn btn-lg btn-warning">
       ADEL vs ESS
     </a>
     <span class="label label-default">Sat 7:45  </span><br />
 
-    <a href="http://www.google.com" target="_blank" class="btn btn-lg btn-warning">
+    <a id = "game7" href="http://www.google.com" target="_blank" class="btn btn-lg btn-warning">
       COLL vs STK
     </a>
     <span class="label label-default">Sun 3:20  </span><br />
 
-    <a href="http://www.yahoo.com" target="_blank" class="btn btn-lg btn-warning">
+    <a id = "game8" href="http://www.yahoo.com" target="_blank" class="btn btn-lg btn-warning">
       BL vs RICH
     </a>
     <span class="label label-default">Sun 4:40  </span><br />
 
-    <a href="http://www.bing.com" target="_blank" class="btn btn-lg btn-warning">
+    <a id = "game9" href="http://www.bing.com" target="_blank" class="btn btn-lg btn-warning">
       HAW vs GEEL
     </a>
     <span class="label label-default">Mon 3:20  </span><br />
-  
-	
-    <form action="http://google.com">
-        <input type="submit" value="Go to Google" />
-	  </form>
-
+    </div>
 
     <iframe height="100%" id="iframe" scrolling="no" width="100%" id="iframe" src="http://live.fanfooty.com.au/game/matchcentre.html?id=6019" />
 

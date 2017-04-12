@@ -1,9 +1,9 @@
 
-.btn {
+.btn-warning {
     width: 200px;
 }
 
-.btn-group {
+.text_container {
     position: absolute;
     top = 150px;
     height: 300px;
