@@ -18,8 +18,7 @@ function changeGame(gameNumber) {
 	
 	switch(gameNumber) {
     case 1:
-        document.getElementById('iframe').src = "http://live.fanfooty.com.au/game/matchcentre.html?id=6020"
-        document.getElementById('iframe').contentWindow.location.reload();
+        document.getElementById('iframe').src = "http://live.fanfooty.com.au/game/matchcentre.html?id=6020";
         break;
     case 2:
         
