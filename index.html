@@ -4,29 +4,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="jquery/jquery.js"></script>
+    <script type="text/javascript" src='js/bootstrap.min.js'></script>
+    <link rel="stylesheet" href="css/bootstrap.css" />
 
     <script type="text/javascript" src="myScript.js"></script>
 
     <!--
     Redirect to fanfooty if not on mobile device
-	  <script type="text/javascript">
-		if (screen.width >= 699)
-		{
-			document.location = "http://www.fanfooty.com.au/";
-		}
-	  </script>
-	  //-->
+    <script type="text/javascript">
+    if (screen.width >= 699)
+    {
+      document.location = "http://www.fanfooty.com.au/";
+    }
+    </script>
+    //-->
 
     <!-- Custom styles for this template -->
     <link href="style.css" rel="stylesheet">
@@ -35,85 +27,29 @@
 
   </head>
 
+ <!-- http://css-snippets.com/drop-down-navigation --> 
+<body class="news">
 
-  <body>
-
-    <div class="container">
-      <a href="#home">Live SC Scores</a>
-      <div class="dropdown">
-        <button class="dropbtn" onclick="changeRound()">Change Round</button>
-        <div class="dropdown-content" id="myDropdown">
-          <a href="#">Round 1</a>
-          <a href="#">Round 2</a>
-          <a href="#">Round 3</a>
-          <a href="#">Round 4</a>
-          <a href="#">Round 1</a>
-          <a href="#">Round 2</a>
-          <a href="#">Round 3</a>
-          <a href="#">Round 4</a>
-          <a href="#">Round 1</a>
-          <a href="#">Round 2</a>
-          <a href="#">Round 3</a>
-          <a href="#">Round 4</a>
-          <a href="#">Round 1</a>
-          <a href="#">Round 2</a>
-          <a href="#">Round 3</a>
-          <a href="#">Round 4</a>
-        </div>
-      </div> 
+<ul>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Change Game</a>
+    <div class="dropdown-content">
+      <a id = "game1" onclick="changeGame(1);" target="_blank">WCE vs SYD &nbsp;&nbsp; Thurs 8:10</a>
+      <a id = "game2" onclick="changeGame(2);" target="_blank">NMFC vs WB &nbsp;&nbsp; Fri 4:20</a>
+      <a id = "game3" onclick="changeGame(3);" target="_blank">MELB vs FREO Sat 1:45</a>
+      <a id = "game4" onclick="changeGame(4);" target="_blank">GWS vs PTA &nbsp;&nbsp;&nbsp;&nbsp; Sat 4:35</a>
+      <a id = "game5" onclick="changeGame(5);" target="_blank">CARL vs GCFC Sat 7:25</a>
+      <a id = "game6" onclick="changeGame(6);" target="_blank">ADEL vs ESS &nbsp;&nbsp; Sat 7:45</a>
+      <a id = "game7" onclick="changeGame(7);" target="_blank">COLL vs STK &nbsp; Sun 3:20</a> 
+      <a id = "game8" onclick="changeGame(8);" target="_blank">BL vs RICH &nbsp;&nbsp;&nbsp;&nbsp; Sun 4:40</a>
+      <a id = "game9" onclick="changeGame(9);" target="_blank">HAW vs GEEL Mon 3:20</a>
     </div>
+  </li>
+</ul>
 
-    <div class="text_container">    
-    <a id = "game1" onclick="changeGame(1);" target="_blank" class="btn btn-lg btn-warning">
-      WCE vs SYD
-    </a>
-    <span class="label label-default">Thurs 8:10</span><br />
+<iframe height="100%" id="iframe" scrolling="no" width="100%" id="iframe" src="" />
 
-    <a id = "game2" onclick="changeGame(2);" target="_blank" class="btn btn-lg btn-warning">
-      NMFC vs WB
-    </a>
-    <span class="label label-default">Fri 4:20 </span><br />
-
-    <a id = "game3" onclick="changeGame(3);" target="_blank" class="btn btn-lg btn-warning">
-      MELB vs FREO
-    </a>
-    <span class="label label-default">Sat 1:45  </span><br />
-
-    <a id = "game4" onclick="changeGame(4);" target="_blank" class="btn btn-lg btn-warning">
-      GWS vs PTA
-    </a>
-    <span class="label label-default">Sat 4:35  </span><br />
-
-    <a id = "game5" onclick="changeGame(5);" target="_blank" class="btn btn-lg btn-warning">
-      CARL vs GCFC
-    </a>
-    <span class="label label-default">Sat 7:25  </span><br />
-
-    <a id = "game6" onclick="changeGame(6);" target="_blank" class="btn btn-lg btn-warning">
-      ADEL vs ESS
-    </a>
-    <span class="label label-default">Sat 7:45  </span><br />
-
-    <a id = "game7" onclick="changeGame(7);" target="_blank" class="btn btn-lg btn-warning">
-      COLL vs STK
-    </a>
-    <span class="label label-default">Sun 3:20  </span><br />
-
-    <a id = "game8" onclick="changeGame(8);" target="_blank" class="btn btn-lg btn-warning">
-      BL vs RICH
-    </a>
-    <span class="label label-default">Sun 4:40  </span><br />
-
-    <a id = "game9" onclick="changeGame(9);" target="_blank" class="btn btn-lg btn-warning">
-      HAW vs GEEL
-    </a>
-    <span class="label label-default">Mon 3:20  </span><br />
-    </div>
-
-    <iframe height="100%" id="iframe" scrolling="no" width="100%" id="iframe" src="" />
-
-
-  </body>
+</body>
 </html>
 
 
