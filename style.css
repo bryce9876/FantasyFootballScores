@@ -74,6 +74,8 @@
 }
 
 iframe {
+    position: absolute;
+    top: -100px;
     width: 1px;
     min-width: 100%;
     *width: 100%;
