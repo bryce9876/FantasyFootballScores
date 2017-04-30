@@ -3,7 +3,14 @@
 toggle between hiding and showing the dropdown content */
 function changeRound() {
     document.getElementById("myDropdown").classList.toggle("show");
+
+    var executed = false;
+      if (!executed) {
+            executed = true;
+      }
 }
+
+
 
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(e) {
@@ -14,6 +21,8 @@ window.onclick = function(e) {
       }
   }
 }
+
+
 
 
 /*----UPDATE IFRAME----*/
@@ -29,45 +38,3 @@ function changeGame(gameNumber) {
     document.getElementById('iframe').src = initialURL + gameXID;
 }
 
-
-
-
-
-/*
-
-function withinTimeRange(startHour, startMin, day){
-	var length = 3;  // Approximate length of a match;
-	var currentdate = new Date(); 
-	var currentDay = currentdate.getDay();
-	var currentHour = currentdate.getHours();
-	var currentMin = currentdate.getMinutes();
-
-	if (currentDay != day) return false;
-	if (startHour == currentHour  &&  startMin <= currentMin){
-		return true;
-	}
-	if (startHour < currentHour  &&  currentHour < (startHour + 3)){
-		return true;
-	}
-	if (currentHour == (startHour + 3)  &&  startMin >= currentMin){
-		return true;
-	}
-	return false;
-}
-
-if ()
-  case (withinTimeRange(18, 10, 4)):
-    
-    break;
-  case (y < 60):
-    //
-    break;
-  case (y < 130):
-    //
-    break;
-}
-
-
-alert("day is " + (currentdate.getDay()) + " and hours is "
-	+ currentdate.getHours() + " and min is " + currentdate.getMinutes());
-*/

@@ -3,6 +3,10 @@
     width: 200px;
 }
 
+.initial_screen {
+    width: 100%;
+}
+
 .text_container {
     position: absolute;
     top = 150px;
