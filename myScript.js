@@ -4,10 +4,13 @@ toggle between hiding and showing the dropdown content */
 function changeRound() {
     document.getElementById("myDropdown").classList.toggle("show");
 
+    // This is for when a splash screen will later be added
+    /*
     var executed = false;
       if (!executed) {
             executed = true;
       }
+    */
 }
 
 
