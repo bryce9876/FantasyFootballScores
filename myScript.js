@@ -19,9 +19,12 @@ window.onclick = function(e) {
 /*----UPDATE IFRAME----*/
 function changeGame(gameNumber) {
 
+	// Upate round value below depending on round
+	var round = 6
+	var game1ID = 6001 + (round-1)*9;
+
 	var initialURL = "http://live.fanfooty.com.au/game/matchcentre.html?id=";
-	var game1ID = 6028;
-	var gameXID = 6028 + gameNumber -1;
+	var gameXID = game1ID + gameNumber -1;
 
     document.getElementById('iframe').src = initialURL + gameXID;
 }
