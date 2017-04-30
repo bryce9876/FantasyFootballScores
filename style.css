@@ -24,7 +24,6 @@
     font-size: 16px;
     color: white;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
 }
 
@@ -51,18 +50,31 @@
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    min-width: 180px;
     z-index: 10;
 }
 
 .dropdown-content a {
     float: none;
     color: black;
-    padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
+    padding-top: 14px;
+}
+
+#right-column {
+    float: left;
+    width: 40%;
+    display: block;
+    height:inherit;
+}
+
+#left-column {
+    float: left;
+    border: 1px;
+    width: 60%;
+    height:inherit;
 }
 
 .dropdown-content a:hover {
