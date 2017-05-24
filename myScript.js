@@ -32,7 +32,7 @@ window.onclick = function(e) {
 function changeGame(gameNumber) {
 
 	// Upate round value below depending on round
-	var round = 9;
+	var round = 10;
 	var game1ID = 6001 + (round-1)*9;
 
 	var initialURL = "http://live.fanfooty.com.au/game/matchcentre.html?id=";
