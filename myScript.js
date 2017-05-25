@@ -31,6 +31,7 @@ function changeGame(gameNumber) {
   // When fanfooty starts working with https, change below to https too
 	var initialURL = "https://live.fanfooty.com.au/game/matchcentre.html?id=";
 	var gameXID = game1ID + gameNumber -1;
+  aler(gameXID);
 
     document.getElementById('iframe').src = initialURL + gameXID;
 }
