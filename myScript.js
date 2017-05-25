@@ -3,14 +3,6 @@
 toggle between hiding and showing the dropdown content */
 function changeRound() {
     document.getElementById("myDropdown").classList.toggle("show");
-
-    // This is for when a splash screen will later be added
-    /*
-    var executed = false;
-      if (!executed) {
-            executed = true;
-      }
-    */
 }
 
 
@@ -33,9 +25,11 @@ function changeGame(gameNumber) {
 
 	// Upate round value below depending on round
 	var round = 10;
-	var game1ID = 6001 + (round-1)*9;
+  var total_byes = 1;
+	var game1ID = 6001 + (round-1)*9 - total_byes;
 
-	var initialURL = "http://live.fanfooty.com.au/game/matchcentre.html?id=";
+  // When fanfooty starts working with https, change below to https too
+	var initialURL = "https://live.fanfooty.com.au/game/matchcentre.html?id=";
 	var gameXID = game1ID + gameNumber -1;
 
     document.getElementById('iframe').src = initialURL + gameXID;
