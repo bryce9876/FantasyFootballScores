@@ -26,7 +26,8 @@ function changeGame(gameNumber) {
 	// Upate round value below depending on round (update after bye round!!!!)
 	var round = 11;
 	var total_byes = 1;
-	var game1ID = 6001 + (round-1)*9 - total_byes;
+	var game1ID = 6002 + (round-1)*9 - total_byes;  // fanfooty randomly incremented
+													// gameID by 1 :|
 
   // When fanfooty starts working with https, change below to https too
 	var initialURL = "http://live.fanfooty.com.au/game/matchcentre.html?id=";
