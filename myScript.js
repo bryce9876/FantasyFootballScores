@@ -24,8 +24,8 @@ window.onclick = function(e) {
 function changeGame(gameNumber) {
 
 	// Upate round value below depending on round (update after bye round!!!!)
-	var round = 11;
-	var total_byes = 1;
+	var round = 12;
+	var total_byes = 4;
 	var game1ID = 6001 + (round-1)*9 - total_byes;
 
   // When fanfooty starts working with https, change below to https too
