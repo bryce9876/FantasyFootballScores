@@ -1,3 +1,10 @@
+
+/*
+window.location.href = "http://www.fanfooty.com.au/m/";
+*/
+
+
+
 /*----DROPDOWN MENU----*/
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
@@ -24,8 +31,8 @@ window.onclick = function(e) {
 function changeGame(gameNumber) {
 
 	// Upate round value below depending on round (update after bye round!!!!)
-	var round = 12;
-	var total_byes = 4;
+	var round = 13;
+	var total_byes = 4; // 8 teams / 2 teams per game = 4
 	var game1ID = 6001 + (round-1)*9 - total_byes;
 
   // When fanfooty starts working with https, change below to https too
