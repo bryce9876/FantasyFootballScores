@@ -1,7 +1,7 @@
 
-/*
+
 window.location.href = "http://www.fanfooty.com.au/m/";
-*/
+
 
 
 
