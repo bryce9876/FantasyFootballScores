@@ -1,6 +1,6 @@
 
 
-window.location.href = "http://www.fanfooty.com.au/m/";
+// window.location.href = "http://www.fanfooty.com.au/m/";
 
 
 
